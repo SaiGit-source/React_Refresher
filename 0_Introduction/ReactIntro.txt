@@ -1,0 +1,15 @@
+React is one of the popular libraries for building user interfaces: companies like Airbnb, PayPal, and Netflix use it to power frontend experiences. It will also prepare you to work with React frameworks like React Native, Vite, and NextJs.
+
+React is a Javascript library, you can use to create user interfaces. it was created at Facebook and opensourced in March 2013
+
+React Native: Tool for Native React Application
+
+React Documentation: https://react.dev/learn
+
+React is used by PayPal, Netflix and Microsoft
+
+How React works?
+Core building block of React is React Elements
+React Elements: what we see on the screen like an HTML tag
+React.createElement("h1", null, "Hello World"); DOM node that displays Hello World
+
