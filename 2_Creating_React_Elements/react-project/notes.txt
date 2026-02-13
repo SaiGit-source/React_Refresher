@@ -10,8 +10,21 @@ to get the latest verison of React that's 19
   }
 
 
+npm create vite@latest react-project -- --template react
   npm run install
   npm run dev
 
 
-  
+main.jsx
+What it is doing is? getElementById
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+we can delete StrictMode for now
+go find 'root' element and render 'App' component
+
+Component is a little building block or piece of our user interface that we are going to describe one part of the application
+
