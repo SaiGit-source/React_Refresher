@@ -1,0 +1,34 @@
+Understanding React compiler
+
+code named "React for Git" is one of most anticipitated features in React19
+
+There is React Compiler Playground, to see how your React code goes from a component to a function
+https://playground.react.dev/
+
+Compiler takes the code and compiles that's optimized for the browser
+Use the playground at playground.react.dev to transform their components to optimized functions.
+
+export default function MyApp() {
+  return (
+    <header>
+    <h1>Hello New React Compiler!</h1> 
+    </header>
+  )
+  }
+
+  We need to install React Developer tools in Chrome, it tells us whether the page is using React or not
+
+Go to: https://react.dev/
+right-click Inspect => Components => it lists the building blocks on this page
+Also if you click on "Manage Extensions", we can see React Developer Tools logo filled-in
+
+react.new can also a Code sandbox to code and test React code
+https://codesandbox.io/p/sandbox/react-new?utm_source=dotnew
+
+Vite is the application that will allow us to generate React application
+https://vite.dev/
+
+
+
+
+

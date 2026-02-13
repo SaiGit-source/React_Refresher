@@ -10,6 +10,26 @@ React is used by PayPal, Netflix and Microsoft
 
 How React works?
 Core building block of React is React Elements
+
 React Elements: what we see on the screen like an HTML tag
 React.createElement("h1", null, "Hello World"); DOM node that displays Hello World
+
+React Apps are made up of React components: React components are one or more React elements nested together. We create a React component using a function
+function Header(){
+    return <h1>Hello React!</h1>
+}
+
+We are using a syntax called as jsx. a tag-based syntax that compiles plain Javascript before we run it in the browser
+
+These components make up the DOM tree
+
+Props: to display dynamic data inside of a component
+
+function Header(props) {
+    return <h1>Hello {props.title}!</h1>
+}
+<Header title="vite" />
+
+
+
 

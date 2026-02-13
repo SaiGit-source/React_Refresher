@@ -1,0 +1,17 @@
+Go to package.json and delete dependencies for React
+
+Run  npm install --save-exact react@rc react-dom@rc
+
+to get the latest verison of React that's 19
+
+  "dependencies": {
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1"
+  }
+
+
+  npm run install
+  npm run dev
+
+
+  
