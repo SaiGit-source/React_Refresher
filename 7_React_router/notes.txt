@@ -37,8 +37,62 @@ useParams => the way we access the "value" in the URL is like this. we can simpl
 and it will give us a JavaScript object containing the names and values. we will get the JavaScript object for a property called "name" key
 to customize contents of a React page based on the "value" of one of the segments in the URL path
 
+Link: gives the URL path to redirect to when clicked:             <Link key={a.name} to={'/articles/'+a.name}>
+
+what if we go to a route that doesn't exist?
+go to App.jsx and add another property called errorElement: it will get displayed only if there is an error
+
+useNavigate():
+It returns a function that allows you to change the URL.
+Think of it like clicking a <Link> programmatically.
+
+Link
+import { Link } from 'react-router-dom';
+
+function NavBar() {
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+    </nav>
+  );
+}
+
+Advantages:
+Easy to use in menus or inline links.
+Automatically prevents full page reloads (SPA behavior).
+Simple and readable in JSX.
 
 
 
+import { useNavigate } from 'react-router-dom';
+
+function LoginForm() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // After successful login
+    navigate('/dashboard');  // redirect programmatically
+  };
+
+  return <button onClick={handleLogin}>Login</button>;
+}
+Advantages:
+You can navigate after an event, condition, or API call.
+Works anywhere in your component logic.
+Can navigate forward, backward, or replace history:
 
 
+
+What are Protected Routes in React?
+A protected route is a route in your app that only certain users can access — usually authenticated users.
+Example: /dashboard, /profile, /admin
+Unauthenticated users trying to access a protected route are redirected to login or home page.
+In React, this is usually done with React Router and a check for authentication.
+
+
+How Protected Routes Work
+You have a state or context that tells whether a user is logged in.
+You create a wrapper component that checks this state.
+If the user is authenticated, render the requested component.
+If not authenticated, redirect to login or homepage.

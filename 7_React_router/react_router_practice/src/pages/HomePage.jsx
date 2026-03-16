@@ -1,5 +1,9 @@
 export default function HomePage() {
     return (
-        <h1>This is the HomePage!</h1>
-    )
+    <div className="homepage-container">
+      <img src='BlogImage.jpg' alt="Blog Hero" className="homepage-image" />
+      <h1>Welcome to Our Articles Blog</h1>
+      <p>Explore tutorials, tips, and guides!</p>
+    </div>
+  );    
 }
