@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage'
 import ArticlePage from './pages/ArticlePage'
 import ArticleListPage from './pages/ArticlesListPage'
 import Layout from './layout'
-import NotFoundPage from './pages/NoutFoundPage'
+import NotFoundPage from './pages/NotFoundPage'
 import ProtectedRouteComponent from './ProtectedRouteComponent'
 import SecretsPage from './pages/SecretsPage'
 
