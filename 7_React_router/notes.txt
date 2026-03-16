@@ -1,0 +1,44 @@
+React router setup
+
+say we want to display some page on a different route say /about, we need to add routing to our application
+
+react-router-dom is a package that does for us
+npm install react-router-dom 
+
+go to App.jsx, add react router logic
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
+const routes = [{
+  path: '/',
+  element: <HomePage></HomePage>
+}
+]
+Array of JavaScript object with specific properties, path: tells React router dom what path we are talking about and element: tells React router dom what to display when we are at that path
+
+take those routes and create a browser router  const router = createBrowserRouter(routes)
+
+Now pass this router as a prop into function App() return   Replace "<HomePage></HomePage>" and add "<RouterProvider router={router}></RouterProvider>"
+
+Thats how we setup a react router
+
+
+
+We create new pages like ArticlePage.jsx then we go to App.jsx to add new routes
+NavBar component to be displayed on all of the pages
+To link all components to the list of nav elements, we import Link element from react-router-dom
+
+Layout component to display all of the component between all the pages. NavBar will be rendered as part of the layout component
+
+React applications are usually single-page applications
+
+path: '/articles/:name', is the URL parameter or route parameter, load all contents and display in that component
+
+useParams => the way we access the "value" in the URL is like this. we can simply call this inside a React component 
+and it will give us a JavaScript object containing the names and values. we will get the JavaScript object for a property called "name" key
+to customize contents of a React page based on the "value" of one of the segments in the URL path
+
+
+
+
+
+
