@@ -87,6 +87,49 @@ function SecretMessage() {
   );
 }
 
+
+//6.example of rendering
+function MovieList() {
+  const movies = [
+    {id:1, title: "Forrest Gump", year: 1994},
+    {id:2, title: "Kung Fu Panda", year: 2008},
+    {id:3, title: "The Lion King", year: 1994},
+  ];
+
+  return (
+    <div>
+      <h2>Movie Collection</h2>
+      <ul>
+        {movies.map(movie => (
+          <li key={movie.id}>
+            {movie.title} ({movie.year})
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+
+
+//7.example of styled components
+// npm install styled-components
+import styled from 'styled-components'; 
+const PrimaryButton = styled.button`
+  background-color: ${props => props.$active ? '#0056b3' : '#007bff'};
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: green;
+  }
+`;
+
+
 function App() { // main component also a functional component that renders the WelcomeMessage component inside a div element
 
   return (
@@ -101,6 +144,10 @@ function App() { // main component also a functional component that renders the 
       <NameForm />
       Event Handling Example:
       <SecretMessage />
+      Rendering Example:
+      <MovieList />
+      Styled Components Example:
+      <PrimaryButton  $active={true}>Watch now</PrimaryButton>
     </div>
   )
 }

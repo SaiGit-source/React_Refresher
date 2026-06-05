@@ -30,6 +30,18 @@ Event handlers allow components to respond to user actions like clicking a butto
 You can pass a function directly to an event prop, like onClick or onChange
 
 
+Rendering lists: Store data in array and use method map() to iterate array and generate JSX for each item and display on UI
+we need to <li key={movie.id}> key prop and React needs this to update the list when new items are added
+
+
+Working with Styled components: CSS files, Inline styles, Libraries
+Styled components can handle hover effects, media queries or theming directly inside the component
+npm install styled-components
+
+
+
+
+
 
 
 
