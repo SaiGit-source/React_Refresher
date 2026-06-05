@@ -1,5 +1,0 @@
-npm create vite@latest 1-understanding-react-jsx -- --template react
-Components are reusable
-
-JSX looks like HTML but works inside JavaScript (JS)
-JSX allows mixing HTML-like tags and JavaScript expression inside curly braces {} return <h2>Welcome to {appName}!</h2>
