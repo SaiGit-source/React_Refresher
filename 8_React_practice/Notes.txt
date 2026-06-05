@@ -21,6 +21,23 @@ useEffect() for running side-effects like fetching backend/API data, useRef() fo
 useContext() for sharing data between components without passing manually {props}
 
 
+Forms: signing in, submitting an order, 
+each input is connected to a piece of state and that's how React controls the form values and easier to make changes also
+Event handler handles form submission (like a button click)
+
+
+Event handlers allow components to respond to user actions like clicking a button or typing in a field
+You can pass a function directly to an event prop, like onClick or onChange
+
+
+
+
+
+
+
+
+
+
 
 
 
